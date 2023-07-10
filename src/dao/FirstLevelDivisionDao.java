@@ -15,13 +15,4 @@ public interface FirstLevelDivisionDao {
      * @throws SQLException from PreparedStatement.
      */
     List<FirstLevelDivision> getAll() throws SQLException;
-
-    /**
-     * Gets divisions given country ID.
-     *
-     * @param countryId The country ID.
-     * @return divisions for the given country.
-     * @throws SQLException from PreparedStatement.
-     */
-    List<FirstLevelDivision> getByCountryId(int countryId) throws SQLException;
 }

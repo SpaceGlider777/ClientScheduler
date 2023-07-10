@@ -32,25 +32,4 @@ public class FirstLevelDivisionDaoImpl implements FirstLevelDivisionDao {
 
         return divisions;
     }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public List<FirstLevelDivision> getByCountryId(int countryId) throws SQLException {
-        List<FirstLevelDivision> divisions = FXCollections.observableArrayList();
-        String sql = "SELECT * FROM first_level_divisions WHERE Country_ID = ?";
-        PreparedStatement ps = JDBC.connection.prepareStatement(sql);
-        ps.setInt(1, countryId);
-        ResultSet rs = ps.executeQuery();
-
-        while (rs.next()) {
-            int divisionId = rs.getInt("Division_ID");
-            String division = rs.getString("Division");
-            FirstLevelDivision divisionObj = new FirstLevelDivision(divisionId, division, countryId);
-            divisions.add(divisionObj);
-        }
-
-        return divisions;
-    }
 }

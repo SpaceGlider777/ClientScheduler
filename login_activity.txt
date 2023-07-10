@@ -21,3 +21,5 @@ User test successfully logged in at 2023-07-09T20:49:08.679458900Z UTC
 User admin successfully logged in at 2023-07-09T20:50:20.238104100Z UTC
 User test successfully logged in at 2023-07-09T20:50:59.734942700Z UTC
 User test successfully logged in at 2023-07-09T20:51:08.533085300Z UTC
+User test gave invalid log-in at 2023-07-09T21:00:49.571528800Z UTC
+User test successfully logged in at 2023-07-09T21:00:52.361530300Z UTC
